@@ -1,0 +1,59 @@
+.others-article {
+    padding-bottom: 150px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    .others-article {
+        padding-bottom: 60px;
+
+        &__title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        .blog-box {
+            max-width: 48%;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 568px) {
+    .others-article {
+        padding-bottom: 80px;
+
+        &__title {
+            text-align: center;
+            margin-bottom: 33px;
+            font-size: 25px;
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        .blog-box {
+            max-width: 100%;
+        }
+    }
+}

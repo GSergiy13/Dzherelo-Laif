@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Фізична реабілітація - Головна сторінка"
+})
+
+<body>
+	@@include('html/header.html',{})
+
+	<section class="promo">
+		<div class="promo__wrapper">
+			<div class="vedeo">
+				<img src="@img/care_bg.jpg" alt="promo">
+			</div>
+			<div class="content">
+				<div class="content__wrapper">
+					<h1 class="content__title">
+						Догляд 24\7
+					</h1>
+					<p class="content__desc">
+						При реабілітаціі людина не може уникнути сторонньої допомоги. Йому не під силу найпростіше – він
+						не може встати, не може ходити, не може приймати самостійно їжу
+					</p>
+
+					<a class="content__btn btn" href="#">Дізнатися більше</a>
+				</div>
+
+				<div class="social">
+					<a class="social__link" href="#">Facebook</a>
+					<a class="social__link" href="#">Instagram</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="care">
+		<div class="container">
+			<div class="care-boxs">
+				<div class="care-boxs__item">
+					<div class="care-boxs__item-top">
+						<div class="care-boxs__item-number">
+							01
+						</div>
+						<img class="care-boxs__item-icon" src="@img/icons/care-icon-1.svg" alt="icons">
+					</div>
+
+					<div class="care-boxs__item-middle">
+						<p class="care-boxs__item-desc">
+							Щоденний лікарський контроль (кардіолог, невролог).
+						</p>
+					</div>
+				</div>
+
+				<div class="care-boxs__item">
+					<div class="care-boxs__item-top">
+						<div class="care-boxs__item-number">
+							02
+						</div>
+						<img class="care-boxs__item-icon" src="@img/icons/care-icon-2.svg" alt="icons">
+					</div>
+
+					<div class="care-boxs__item-middle">
+						<p class="care-boxs__item-desc">
+							5-ти разове харчування, згідно з лікарським призначенням
+							(дієта, блендерне, дисфагійне)
+						</p>
+					</div>
+				</div>
+
+				<div class="care-boxs__item">
+					<div class="care-boxs__item-top">
+						<div class="care-boxs__item-number">
+							03
+						</div>
+						<img class="care-boxs__item-icon" src="@img/icons/care-icon-3.svg" alt="icons">
+					</div>
+
+					<div class="care-boxs__item-middle">
+						<p class="care-boxs__item-desc">
+							Комфортабельне розміщення в кімнатах, обладнаних багатофункціональними ліжками із
+							протипролежневими матрацами, системами кондиціонування та кварцування.
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+			<h2 class="care__title title">
+				Цілодобові медичні послуги:
+			</h2>
+
+			<div class="care__wrapper">
+
+
+				<div class="care__content">
+					<ul class="care__content-list">
+						<li class="care__content-item">
+							Висококваліфіковане виконання лікарських призначень
+						</li>
+
+						<li class="care__content-item">
+							Цілодобовий контроль стану пацієнта
+						</li>
+
+						<li class="care__content-item">
+							Ін'єкції та інфузії різної складност
+						</li>
+
+						<li class="care__content-item">
+							Догляд за гастростомами, трахеостомами, катетерами
+						</li>
+						<li class="care__content-item">
+							Установка сечових катетерів
+						</li>
+						<li class="care__content-item">
+							Профілактика та лікування пролежнів
+						</li>
+						<li class="care__content-item">
+							Киснева підтримка (за потреби)
+						</li>
+					</ul>
+				</div>
+
+				<div class="care__picture">
+					<img class="care__picture-img care__picture-img--1" src="@img/care/care-1.jpg" alt="care">
+					<img class="care__picture-img care__picture-img--2" src="@img/care/care-2.jpg" alt="care">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	@@include('html/footer.html',{})
+</body>
+
+</html>

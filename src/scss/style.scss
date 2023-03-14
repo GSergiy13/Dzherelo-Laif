@@ -1,0 +1,159 @@
+@import "fonts.scss";
+@import "reset.scss";
+
+@import "./global-section/header.scss";
+@import "./global-section/contacts.scss";
+@import "./global-section/blog.scss";
+@import "./global-section/footer.scss";
+
+@import "./section/index/promo.scss";
+@import "./section/index/services.scss";
+@import "./section/index/about-us.scss";
+@import "./section/index/advances-company.scss";
+@import "./section/index/team.scss";
+@import "./section/index/gallery.scss";
+@import "./section/index/reviews.scss";
+@import "./section/index/partners.scss";
+
+@import "./section/doctors/filter-doctors.scss";
+
+@import "./section/article/article.scss";
+@import "./section/article/others-article.scss";
+
+@import "./section/care/care.scss";
+
+@import "./section/programs/programs.scss";
+
+@import "./section/therapy/therapy.scss";
+
+@import "./section/blog/last-news.scss";
+@import "./section/blog/expert-news.scss";
+@import "./section/blog/all-articles.scss";
+
+@import "./section/neuro/neuro-desc.scss";
+@import "./section/neuro/neuro-method.scss";
+
+
+@import "./section/movement/movement-desc.scss";
+@import "./section/movement/movement.scss";
+
+@import "./modal.scss";
+
+
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 1;
+    z-index: 1200;
+    animation: preloaderLeft 3s alternate forwards;
+    animation-delay: 4s;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 1;
+    z-index: 1200;
+    animation: preloaderRight 3s alternate forwards;
+    animation-delay: 4s;
+  }
+
+  svg {
+    position: relative;
+    z-index: 2300;
+  }
+}
+
+.animation-pigeon {
+  fill: none;
+  stroke: #6D9AE4;
+  stroke-width: 16px;
+  stroke-dasharray: 3600;
+  stroke-dashoffset: 3600;
+  animation: pigeon 5s alternate;
+}
+
+
+
+
+
+@keyframes pigeon {
+  5% {
+    stroke-dashoffset: 3600;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+
+  90% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animation-laurel {
+  opacity: 0;
+  animation: laurel 5s alternate;
+}
+
+@keyframes laurel {
+  5% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  95% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes preloaderLeft {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+
+@keyframes preloaderRight {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
