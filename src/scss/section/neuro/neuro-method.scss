@@ -90,6 +90,10 @@
     }
 
     &:hover {
+      &::after {
+        opacity: 0;
+      }
+
       .method__content {
         transform: translate(0);
       }
@@ -171,17 +175,33 @@
 
 @media screen and (max-width: 568px) {
   .neuro-method {
-    padding: 0 15px;
+    padding: 0;
 
     &__title {
       margin-bottom: 35px;
+
+      &::after {
+        top: 0%;
+        height: 50%;
+        width: 100%;
+        border-radius: 6.3333px;
+        transform: translate(-10%, 0%);
+      }
     }
 
 
 
     .method {
       width: calc(100%);
-      min-height: 400px;
+      min-height: 450px;
+
+      &__content {
+        &-desc {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
     }
   }
 }

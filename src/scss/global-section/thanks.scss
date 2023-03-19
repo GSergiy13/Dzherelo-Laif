@@ -1,0 +1,158 @@
+.thanks {
+  padding: 200px 0 170px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+  .content {
+    width: 100%;
+    max-width: 760px;
+
+    &__title {
+      display: block;
+      width: fit-content;
+      padding: 17px 22px;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 120%;
+      background: #6D9AE4;
+      border-radius: 13.3333px;
+      text-transform: uppercase;
+      margin-bottom: 37px;
+    }
+
+    &__desc {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 120%;
+      margin-bottom: 25px;
+    }
+
+    &__btn {
+      padding: 14px 50px;
+    }
+  }
+
+  .picture {
+    width: 100%;
+    max-width: 600px;
+
+    &__img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1568px) {
+  .thanks {
+    padding: 150px 0 150px;
+
+    &__wrapper {
+      gap: 50px;
+    }
+
+
+    .content {
+
+      &__title {
+        font-size: 35px;
+        margin-bottom: 27px;
+      }
+
+      &__desc {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+
+    }
+
+    .picture {
+      max-width: 450px;
+    }
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .thanks {
+    padding: 100px 0 150px;
+
+    &__wrapper {
+      gap: 30px;
+      flex-direction: column-reverse;
+    }
+
+
+    .content {
+      text-align: center;
+
+      &__title {
+        margin: 0 auto 27px;
+        font-size: 35px;
+      }
+
+      &__desc {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+
+      &__btn {
+        margin: 0 auto;
+      }
+
+    }
+
+    .picture {
+      max-width: 450px;
+    }
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 568px) {
+  .thanks {
+    padding: 80px 0 50px;
+
+
+    .content {
+      text-align: center;
+
+      &__title {
+        margin: 0 auto 15px;
+        font-size: 25px;
+        padding: 12px 25px;
+      }
+
+      &__desc {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      &__btn {
+        margin: 0 auto;
+        font-size: 20px;
+      }
+
+    }
+
+    .picture {
+      max-width: 228px;
+    }
+  }
+
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"404 - Сторінка не знайдена"
+})
+
+<body>
+	@@include('html/header.html',{})
+
+
+	<section class="no-page">
+		<div class="container">
+			<div class="no-page__wrapper">
+				<div class="no-page__content">
+					<h2 class="no-page__content-title">
+						404
+					</h2>
+					<h3 class="no-page__content-subtitle">
+						error
+					</h3>
+					<p class="no-page__content-desc">
+						Сторінка не знайдена
+					</p>
+					<a class="no-page__content-btn btn" href="./">На головну</a>
+				</div>
+
+				<div class="no-page__picture">
+					<img class="no-page__picture-img" src="@img/404.svg" alt="404">
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="logo">
+					<img src="@img/logo.svg" alt="logo" class="logo__img">
+
+
+				</div>
+
+				<div class="navigation">
+					<nav>
+						<ul class="navigation-list">
+							<li class="navigation-list__box">
+								<a class="navigation-list__box-link" href="#"><span>Послуги</span></a>
+							</li>
+
+							<div class="navigation-list__inner">
+								<div class="navigation-list__item">
+									<li class="navigation-list__box">
+										<a class="navigation-list__box-link" href="./programs.html">Фізична реабілітация</a>
+									</li>
+									<li class="navigation-list__box">
+										<a class="navigation-list__box-link" href="#">Нейрореабілітація</a>
+									</li>
+									<li class="navigation-list__box">
+										<a class="navigation-list__box-link" href="./therapy.html">Ерготерапія</a>
+									</li>
+								</div>
+								<div class="navigation-list__item">
+									<li class="navigation-list__box">
+										<a class="navigation-list__box-link" href="#">Патронажна служба</a>
+									</li>
+									<li class="navigation-list__box">
+										<a class="navigation-list__box-link" href="#">Реабілітація вдома</a>
+									</li>
+									<li class="navigation-list__box">
+										<a class="navigation-list__box-link" href="#">Амбулаторне лікування</a>
+									</li>
+								</div>
+								<div class="navigation-list__item">
+									<li class="navigation-list__box">
+										<a class="navigation-list__box-link" href="./article.html">Терапія мови та
+											мовлення</a>
+									</li>
+									<li class="navigation-list__box">
+										<a class="navigation-list__box-link" href="./care.html">Догляд 24\7</a>
+									</li>
+									<li class="navigation-list__box">
+										<a class="navigation-list__box-link" href="#">Прокат Медтехніки</a>
+									</li>
+								</div>
+							</div>
+
+							<li class="navigation-list__box">
+								<a class="navigation-list__box-link" href="./doctors.html"><span>Команда</span></a>
+							</li>
+							<li class="navigation-list__box">
+								<a class="navigation-list__box-link" href="./blog.html"><span>Блог</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="social">
+
+					<div class="social__wrapper">
+						<a class="social__link" href="#">
+							<img class="social__link-icon" src="@img/icons/fb.svg" alt="fb">
+						</a>
+
+						<a class="social__link" href="#">
+							<img class="social__link-icon" src="@img/icons/instagram.svg" alt="fb">
+						</a>
+
+						<a class="social__link" href="#">
+							<img class="social__link-icon" src="@img/icons/youtube.svg" alt="fb">
+						</a>
+					</div>
+
+
+					<div class="social__copy">
+						<a href="#" class="social__copy-link">Конфіденційність і умови</a>
+						<div class="social__copy-year">
+							2023
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/gsap.min.js" defer></script>
+	<script src="js/ScrollTrigger.min.js" defer></script>
+	<script src="js/ScrollSmoother.min.js" defer></script>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

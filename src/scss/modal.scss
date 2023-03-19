@@ -22,9 +22,8 @@
     height: 30px;
     background: #fff;
     padding: 5px;
-
+    z-index: 500;
     cursor: pointer;
-    z-index: 100;
 
 
     &::after {
@@ -74,16 +73,6 @@
 @media screen and (max-width: 992px) {
   .modal {
     padding: 0 20px;
-
-
-    &__close {
-      transform: translate(-0%, -110%);
-
-
-      &:hover {
-        transform: translate(100%, -100%) rotate(90deg);
-      }
-    }
 
     .content {
       min-height: 400px;

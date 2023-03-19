@@ -28,8 +28,6 @@
         }
 
         .form {
-
-
             &__wrapper {
                 display: flex;
                 justify-content: space-between;
@@ -116,6 +114,11 @@
             &-link {
                 font-size: 24px;
                 line-height: 100%;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: #6d9ae4;
+                }
             }
         }
 
@@ -123,7 +126,6 @@
             margin-top: 25px;
         }
     }
-
 }
 
 .location {

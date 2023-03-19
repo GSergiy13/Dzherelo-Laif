@@ -1,5 +1,6 @@
 @import "fonts.scss";
 @import "reset.scss";
+@import "youtube.scss";
 
 @import "./global-section/header.scss";
 @import "./global-section/contacts.scss";
@@ -37,7 +38,28 @@
 @import "./section/movement/movement-desc.scss";
 @import "./section/movement/movement.scss";
 
+@import "./section/service/service.scss";
+
+
+@import "./section/home/home-desc.scss";
+@import "./section/home/personnels.scss";
+@import "./section/home/program-home.scss";
+
+@import "./section/outpatient/outpatient.scss";
+
+
+@import "./section/rolling/rolling-desc.scss";
+@import "./section/rolling/rolling.scss";
+
+
+
 @import "./modal.scss";
+
+
+@import "./global-section/no-page.scss";
+@import "./global-section/thanks.scss";
+
+
 
 
 .preloader {
@@ -84,6 +106,7 @@
     z-index: 2300;
   }
 }
+
 
 .animation-pigeon {
   fill: none;

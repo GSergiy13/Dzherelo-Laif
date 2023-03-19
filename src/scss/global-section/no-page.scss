@@ -1,0 +1,146 @@
+.no-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 112px 0 200px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+  &__content {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+
+
+    &-title {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 10px;
+      font-weight: 700;
+      font-size: 195.574px;
+      line-height: 72%;
+      text-transform: uppercase;
+      color: #6D9AE4;
+    }
+
+    &-subtitle {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 100%;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+      color: #000000;
+    }
+
+    &-desc {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 100%;
+      margin-bottom: 25px;
+    }
+
+    &-btn {
+      margin: 0 auto;
+      padding: 14px 60px;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    max-width: 750px;
+
+    &-img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1568px) {
+  .no-page {
+    padding: 112px 0 140px;
+
+    &__content {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+
+
+      &-title {
+        margin: 0 auto 5px;
+        font-size: 150px;
+      }
+
+      &-subtitle {
+        font-size: 50px;
+        margin-bottom: 25px;
+      }
+
+      &-desc {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__picture {
+      max-width: 520px;
+
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .no-page {
+    padding: 112px 0 70px;
+
+    &__wrapper {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+
+
+  }
+}
+
+
+@media screen and (max-width: 568px) {
+  .no-page {
+    padding: 70px 0 100px;
+
+    &__content {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+
+
+      &-title {
+        margin: 0 auto 10px;
+        font-size: 100px;
+      }
+
+      &-subtitle {
+        font-size: 30px;
+      }
+
+      &-desc {
+        font-size: 20px;
+        margin-bottom: 28px;
+      }
+
+      &-btn {
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 14px 40px;
+      }
+    }
+
+    &__picture {
+      max-width: 260px;
+    }
+  }
+}

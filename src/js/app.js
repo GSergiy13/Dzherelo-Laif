@@ -1,8 +1,14 @@
 import toggleClass from "./modules/toggleClass.js";
 import tabs from "./modules/tabs.js";
 import modalsPlayers from "./modules/modals.js";
+import acorrdionBox from "./modules/acorrdionBox.js";
+import lazyLoadYoutub from "./modules/lazyLoadYoutube.js";
 
 window.addEventListener('DOMContentLoaded', function() {
+
+  acorrdionBox('.neuro-btn')
+
+  lazyLoadYoutub();
 
   const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -18,6 +24,16 @@ for (let anchor of anchors) {
     })
   })
 }
+
+$('.partners-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  infinite: true,
+  arrows: false,
+  speed: 3000,
+});
+	
 
 
 try {
@@ -94,20 +110,7 @@ try {
     });
     
   } catch(e) {}
-      
-  let sumArrNumvers = 0;
-  
-  function sortrArrRcursive(arr, index = 0) {
-    if(arr.length > index) {
-      sumArrNumvers += arr[index];
-      sortrArrRcursive(arr,++index);
-    }
-    
-    return sumArrNumvers;
-  }
-  
-  console.log( sortrArrRcursive([1, 23, 34, 26, 54, 20]));
-
+   
 
   const loader = document.querySelector('.preloader');
 
@@ -119,68 +122,73 @@ try {
     });
   };
 
-  const loader7Timeline = new TimelineMax({repeat: -1});
+//   const loader7Timeline = new TimelineMax({repeat: -1});
 
-loader7Timeline.staggerTo('.loader7 circle', 0.4, {
-  attr: {
-    "fill-opacity": 1
-  }
-}, 0.2)
-.staggerTo('.loader7 circle', 0.4, {
-  attr: {
-    "fill-opacity": 0
-  }
-}, 0.2, 0.4);
-
-
+// loader7Timeline.staggerTo('.loader7 circle', 0.4, {
+//   attr: {
+//     "fill-opacity": 1
+//   }
+// }, 0.2)
+// .staggerTo('.loader7 circle', 0.4, {
+//   attr: {
+//     "fill-opacity": 0
+//   }
+// }, 0.2, 0.4);
 
     //   GSAP - animation (Left, Right, Top)
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
-    if (ScrollTrigger.isTouch !== 1) {
+    try {
+      gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
-
-        let itemsL = gsap.utils.toArray('.effects__left'),
-            itemsT = gsap.utils.toArray('.effects__top'),
-            itemsR = gsap.utils.toArray('.effects__right');
-
-        itemsL.forEach(item => {
-            gsap.fromTo(item, { opacity: 0, x: -50 }, {
-                opacity: 1, x: 0,
-                scrollTrigger: {
-                    trigger: item,
-                    start: '-850',
-                    end: 'top',
-                    scrub: true
-                }
-            })
-        })
-
-        itemsR.forEach(item => {
-            gsap.fromTo(item, { opacity: 0, x: 50 }, {
-                opacity: 1, x: 0,
-                scrollTrigger: {
-                    trigger: item,
-                    start: '-850',
-                    end: 'top',
-                    scrub: true
-                }
-            })
-        })
-
-        itemsT.forEach(item => {
-            gsap.fromTo(item, { opacity: 0, y: 50 }, {
-                opacity: 1, y: 0,
-                scrollTrigger: {
-                    trigger: item,
-                    start: '-850',
-                    end: 'top',
-                    scrub: true
-                }
-            })
-        })
-    };
-
+      if (ScrollTrigger.isTouch !== 1) {
+  
+  
+          let itemsL = gsap.utils.toArray('.effects__left'),
+              itemsT = gsap.utils.toArray('.effects__top'),
+              itemsR = gsap.utils.toArray('.effects__right');
+  
+          itemsL.forEach(item => {
+              gsap.fromTo(item, { opacity: 0, x: -50 }, {
+                  opacity: 1, x: 0,
+                  scrollTrigger: {
+                      trigger: item,
+                      start: '-850',
+                      end: 'top',
+                      scrub: true
+                  }
+              })
+          })
+  
+          itemsR.forEach(item => {
+              gsap.fromTo(item, { opacity: 0, x: 50 }, {
+                  opacity: 1, x: 0,
+                  scrollTrigger: {
+                      trigger: item,
+                      start: '-850',
+                      end: 'top',
+                      scrub: true
+                  }
+              })
+          })
+  
+          itemsT.forEach(item => {
+              gsap.fromTo(item, { opacity: 0, y: 50 }, {
+                  opacity: 1, y: 0,
+                  scrollTrigger: {
+                      trigger: item,
+                      start: '-850',
+                      end: 'top',
+                      scrub: true
+                  }
+              })
+          })
+      };
+  
+    } catch(e) {}
+    
 
 
 })
+
+
+

@@ -6,11 +6,13 @@ const modalsPlayers = (triggerSelectors, modalSeelctors) => {
   
   triggers.addEventListener('click', function(e) {
     document.querySelector('body').style.overflow = 'hidden';
+
     gsap.fromTo(modal, {opacity:0, zIndex: -1}, {
       opacity:1, zIndex: 100,
       duration: 0.6
     });
   });
+
 
   modal.querySelector('.modal__close').addEventListener('click', function(e) {
     document.querySelector('body').style.overflow = '';
